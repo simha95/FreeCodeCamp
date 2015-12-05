@@ -634,7 +634,6 @@ module.exports = function(app) {
     )
       .subscribe(
         ({ camperCount, superBlocks }) => {
-          console.log('sup', superBlocks);
           res.render('challengeMap/show', {
             superBlocks,
             daysRunning,
